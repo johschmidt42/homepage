@@ -1,0 +1,14 @@
+node_modules/
+.env
+.DS_Store
+Thumbs.db
+
+# Generated / QA
+screenshots/
+
+# Original assets (large, personal)
+resources/
+
+# Local Claude settings
+.claude/
+.idea/
