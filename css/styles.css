@@ -9,12 +9,12 @@
 
 :root {
   /* Colors */
-  --color-primary: #e8753a;
-  --color-primary-light: #f4a97d;
-  --color-primary-dark: #c45e28;
-  --color-secondary: #5b9bd5;
-  --color-secondary-light: #8fbde6;
-  --color-secondary-dark: #3a7fc0;
+  --color-primary: #1e3a5f;
+  --color-primary-light: #2d5a8e;
+  --color-primary-dark: #122540;
+  --color-secondary: #e8753a;
+  --color-secondary-light: #f4a97d;
+  --color-secondary-dark: #c45e28;
   --color-dark: #1e293b;
   --color-text: #374151;
   --color-text-muted: #6b7280;
