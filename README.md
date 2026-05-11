@@ -1,6 +1,6 @@
 # Johannes Schmidt — Portfolio Website
 
-Personal freelancer portfolio deployed to GitHub Pages: https://johschmidt42.github.io/homepage/
+Personal freelancer portfolio deployed to GitHub Pages: https://johannes-schmidt.dev
 
 ## Tech Stack
 
@@ -16,7 +16,7 @@ blog.html           — Blog overview
 cv/                 — CV page
 css/styles.css      — All styles
 js/main.js          — All scripts
-images/optimized/   — Images and logo
+images/             — Images and logo
 ```
 
 ## Design System
@@ -25,8 +25,8 @@ images/optimized/   — Images and logo
 
 **Colors**
 
-- Primary: `#e8753a` (orange)
-- Secondary: `#5b9bd5` (blue)
+- Primary: `#1e3a5f` (navy)
+- Secondary: `#e8753a` (orange)
 - Grays: Tailwind Slate Scale
 
 **Typography** — Outfit (headings) + Inter (body) via Google Fonts

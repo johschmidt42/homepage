@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://johschmidt42.github.io/homepage/</loc>
+    <loc>https://johannes-schmidt.dev/</loc>
     <lastmod>2026-05-08</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://johschmidt42.github.io/homepage/blog.html</loc>
+    <loc>https://johannes-schmidt.dev/blog.html</loc>
     <lastmod>2026-05-09</lastmod>
     <priority>0.8</priority>
   </url>
