@@ -495,8 +495,8 @@ h1 .highlight {
 
 h2 .highlight {
   color: inherit;
-  background-size: 0% 10px;
-  background-position: 0 calc(100% - 2px);
+  background-size: 0% 6px;
+  background-position: 0 100%;
 }
 
 .highlight.is-visible {
@@ -504,7 +504,7 @@ h2 .highlight {
 }
 
 h2 .highlight.is-visible {
-  background-size: 100% 10px;
+  background-size: 100% 6px;
 }
 
 .hero-subtitle {
