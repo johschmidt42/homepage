@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "title": "Backend & Data Experte freiberuflich – Johannes Schmidt",
+    "description": "Freiberuflicher Software Engineer aus Würzburg — Backend, Data & AI. Python, Cloud-Architektur und KI-Integration für skalierbare Systeme."
+  },
+  "blog_meta": {
+    "title": "Blog – Johannes Schmidt | Backend & Data Experte",
+    "description": "Tutorials, Einblicke und Erfahrungen aus der Praxis."
+  },
+  "nav": {
+    "services": "Leistungen",
+    "portfolio": "Portfolio",
+    "about": "Über mich",
+    "blog": "Blog",
+    "cv": "Lebenslauf",
+    "contact": "Kontakt",
+    "menu_open": "Menü öffnen",
+    "menu_close": "Menü schließen"
+  },
+  "hero": {
+    "eyebrow": "Backend & Data Experte",
+    "title_pre": "Weniger Chaos, mehr ",
+    "title_highlight": "Struktur.",
+    "subtitle": "Ich entwickle skalierbare Backend-Systeme, datengetriebene Pipelines und Cloud-Lösungen — von der Idee bis in die Produktion.",
+    "cta_primary": "Kontakt aufnehmen",
+    "cta_secondary": "Projekte ansehen",
+    "badge_azure": "Microsoft Azure Zertifiziert",
+    "badge_architect": "Architekt & Entwickler",
+    "badge_msc": "Master of Science",
+    "img_alt": "Johannes Schmidt, Backend & Data Experte"
+  },
+  "stats": {
+    "years": "Jahre Erfahrung",
+    "certs": "Zertifizierungen",
+    "projects": "Projekte umgesetzt",
+    "tech": "Technologien"
+  },
+  "services": {
+    "label": "Leistungen",
+    "title": "Was ich für Sie tun kann",
+    "subtitle": "Von der Architektur bis zum Deployment — sauber, skalierbar, produktionsreif.",
+    "api_title": "System- & API-Design",
+    "api_desc": "Durchdachtes API- und Datenbankdesign als Fundament skalierbarer Systeme. REST-APIs, event-driven Architekturen und saubere Systemgrenzen.",
+    "backend_title": "Backend-Entwicklung",
+    "backend_desc": "Skalierbare Backend-Systeme mit Python und FastAPI. Sauberer Code und robuste Testabdeckung — produktionsreif von Anfang an.",
+    "data_title": "Daten & Pipelines",
+    "data_desc": "Datenarchitektur und ETL-Pipelines. Von der Rohdaten-Ingestion bis zur sauberen, verwertbaren Datenbasis.",
+    "ai_title": "AI Engineering",
+    "ai_desc": "KI-Modelle und LLMs in produktive Systeme integrieren — mit Evaluierung, Observability und Skalierung, damit KI nicht beim Prototyp bleibt.",
+    "devops_title": "DevOps & CI/CD",
+    "devops_desc": "CI/CD-Pipelines, containerisierte Deployments und end-to-end Observability — damit Software schnell, sicher und nachvollziehbar in Produktion geht.",
+    "cloud_title": "Cloud-Infrastruktur",
+    "cloud_desc": "Cloud-Architekturen auf Azure, GCP und AWS — provisioniert mit Infrastructure as Code (IaC)."
+  },
+  "portfolio": {
+    "label": "Portfolio",
+    "title_pre": "Ausgewählte ",
+    "title_highlight": "Projekte",
+    "subtitle": "Von der Backend-Architektur bis zur KI-Integration — ein Auszug meiner Projekte als Freelancer.",
+    "item1_title": "Video-Content-Analyse-Plattform",
+    "item1_desc": "KI-gestützte Plattform zur automatischen Extraktion von Metadaten aus Videoinhalten — Plotlines, Charaktere, Szenen. Microservices-Architektur auf GCP mit sicherer Authentifizierung, Observability via OpenTelemetry und LLM-Integration.",
+    "item2_title": "Story-Development-Workflow-Plattform",
+    "item2_desc": "Modulares KI-Workflow-System für kreative Produktionsteams auf Azure. Deep-Research-Workflows und GenAI-gestützte Bildgenerierung mit LangChain, Monitoring mit LangSmith.",
+    "item3_title": "Multi-Subscription Data Exchange Store",
+    "item3_desc": "Daten-Plattform auf Azure. ETL-Pipelines mit Databricks und Azure Synapse, hohe Sicherheitsanforderungen nach OWASP-Standard.",
+    "item4_title": "Agentic-RAG-System",
+    "item4_desc": "Retrieval-Augmented-Generation-System mit autonomen Agenten, die an strukturierte und unstrukturierte Datenquellen angebunden sind. OpenAI-Integration, Vektordatenbank mit QDrant, vollständiges Observability-Setup mit OpenTelemetry und Langfuse."
+  },
+  "about": {
+    "label": "Über mich",
+    "title_pre": "Von der Wissenschaft zum",
+    "title_highlight": "Software Engineer",
+    "chapter1": "Einstieg",
+    "p1": "Im Bioinformatik-Studium entdeckte ich Programmieren als Werkzeug — um Daten zu verstehen, Prozesse zu automatisieren und wissenschaftliche Fragen zu beantworten.",
+    "chapter2": "Wachstum",
+    "p2": "Als Werkstudent bei einem Startup eingestiegen, kurze Zeit später fest übernommen. Drei Jahre Kundenprojekte: echte Systeme, echte Probleme, echte Deadlines. Hier habe ich das Handwerk gelernt — Backend-Entwicklung, Datenpipelines, verschiedene Cloud-Umgebungen. Von der Idee bis zum Go-Live.",
+    "chapter3": "Heute",
+    "p3": "Seit Januar 2024 freiberuflich, mit über 6 Jahren Erfahrung über den gesamten Stack: Software, Data, AI und Cloud. Das Studium hat analytisches Denken geprägt, die Praxis den Blick für Systeme, die liefern müssen.",
+    "p4": "Ich arbeite strukturiert, kommuniziere direkt und liefere in kurzen Iterationen — damit Projekte nicht nur starten, sondern ankommen.",
+    "cta_pre": "Neugierig geworden?",
+    "cta_link": "Lassen Sie uns sprechen.",
+    "highlight1_title": "Anpassungsfähig",
+    "highlight1_desc": "Schnelle Einarbeitung, nachhaltiges Verständnis",
+    "highlight2_title": "Fokus auf Ergebnisse",
+    "highlight2_desc": "Pragmatismus, kein Perfektionismus",
+    "highlight3_title": "Remote & vor Ort",
+    "highlight3_desc": "Remote-first, vor Ort für Workshops",
+    "highlight4_title": "Selbständig & effizient",
+    "highlight4_desc": "Direkte Kommunikation, Qualitätsfokus"
+  },
+  "certs": {
+    "label": "Zertifizierungen",
+    "title_pre": "Zertifizierte ",
+    "title_highlight": "Expertise"
+  },
+  "blog": {
+    "label": "Blog",
+    "title_pre": "Wissen ",
+    "title_highlight": "teilen",
+    "subtitle": "Tutorials, Einblicke und Erfahrungen aus der Praxis.",
+    "read": "Lesen",
+    "see_all": "Alle Beiträge ansehen",
+    "post1_date": "17. Nov 2023",
+    "post2_date": "29. Jun 2023",
+    "post3_date": "23. Feb 2021"
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title_pre": "Projekt ",
+    "title_highlight": "besprechen?",
+    "subtitle": "Ich freue mich über Ihre Nachricht, ob Projektanfrage oder einfach zum Austausch.",
+    "email_label": "E-Mail",
+    "phone_label": "Telefon",
+    "location_label": "Standort",
+    "location_value": "Würzburg, Bayern",
+    "form_name_label": "Name",
+    "form_name_placeholder": "Ihr Name",
+    "form_email_label": "E-Mail",
+    "form_email_placeholder": "ihre@email.de",
+    "form_subject_label": "Betreff",
+    "form_subject_default": "Bitte wählen...",
+    "form_subject_project": "Projektanfrage",
+    "form_subject_consulting": "Beratung",
+    "form_subject_other": "Sonstiges",
+    "form_message_label": "Nachricht",
+    "form_message_placeholder": "Beschreiben Sie kurz Ihr Anliegen...",
+    "form_submit": "Nachricht senden"
+  },
+  "footer": {
+    "rights": "© 2026 Johannes Schmidt. Alle Rechte vorbehalten.",
+    "contact": "Kontakt",
+    "impressum": "Impressum"
+  }
+}

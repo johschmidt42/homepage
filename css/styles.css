@@ -1935,3 +1935,41 @@ h2 .highlight.is-visible {
     align-items: center;
   }
 }
+
+/* ===== LANG SWITCHER ===== */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: var(--space-sm);
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+.lang-switcher span[aria-hidden] {
+  color: var(--color-border);
+  user-select: none;
+}
+
+.lang-switch {
+  background: none;
+  border: none;
+  padding: 2px 5px;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+  border-radius: var(--radius-sm);
+}
+
+.lang-switch:hover {
+  color: var(--color-primary);
+}
+
+.lang-switch--active {
+  color: var(--color-primary);
+  font-weight: 700;
+}

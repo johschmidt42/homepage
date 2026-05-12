@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog – Johannes Schmidt | Backend & Data Experte</title>
-    <meta name="description" content="Tutorials, Einblicke und Erfahrungen aus der Praxis." />
+    <title data-i18n="blog_meta.title">Blog – Johannes Schmidt | Backend & Data Experte</title>
+    <meta name="description" data-i18n="[content]blog_meta.description" content="Tutorials, Einblicke und Erfahrungen aus der Praxis." />
     <link rel="canonical" href="https://johannes-schmidt.dev/blog.html" />
 
     <!-- Open Graph -->
@@ -92,6 +92,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- i18next -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@23/dist/umd/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2/i18nextHttpBackend.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@7/i18nextBrowserLanguageDetector.min.js"></script>
   </head>
   <body>
     <!-- ===== HEADER ===== -->
@@ -111,12 +116,12 @@
           <span>Johannes Schmidt</span>
         </a>
         <nav class="nav-links" id="nav">
-          <a href="index.html#leistungen">Leistungen</a>
-          <a href="index.html#portfolio">Portfolio</a>
-          <a href="index.html#ueber-mich">Über mich</a>
-          <a href="blog.html">Blog</a>
+          <a href="index.html#leistungen" data-i18n="nav.services">Leistungen</a>
+          <a href="index.html#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+          <a href="index.html#ueber-mich" data-i18n="nav.about">Über mich</a>
+          <a href="blog.html" data-i18n="nav.blog">Blog</a>
           <a href="cv/cv.pdf" target="_blank" rel="noopener"
-            >Lebenslauf<svg
+            ><span data-i18n="nav.cv">Lebenslauf</span><svg
               class="nav-ext-icon"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 12 12"
@@ -133,9 +138,14 @@
                 d="M5 2H2.5A1.5 1.5 0 001 3.5v6A1.5 1.5 0 002.5 11h6A1.5 1.5 0 0010 9.5V7M7 1h4m0 0v4m0-4L5.5 6.5"
               /></svg
           ></a>
-          <a href="index.html#kontakt" class="btn btn-primary btn-sm">Kontakt</a>
+          <a href="index.html#kontakt" class="btn btn-primary btn-sm" data-i18n="nav.contact">Kontakt</a>
+          <div class="lang-switcher">
+            <button class="lang-switch lang-switch--active" data-lang="de">DE</button>
+            <span aria-hidden="true">|</span>
+            <button class="lang-switch" data-lang="en">EN</button>
+          </div>
         </nav>
-        <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen">
+        <button class="nav-toggle" id="nav-toggle" data-i18n="[aria-label]nav.menu_open" aria-label="Menü öffnen">
           <span></span>
           <span></span>
           <span></span>
@@ -156,9 +166,9 @@
       </div>
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Blog</span>
-          <h1>Wissen <span class="highlight">teilen</span></h1>
-          <p>Tutorials, Einblicke und Erfahrungen aus der Praxis.</p>
+          <span class="section-label" data-i18n="blog.label">Blog</span>
+          <h1><span data-i18n="blog.title_pre">Wissen </span><span class="highlight" data-i18n="blog.title_highlight">teilen</span></h1>
+          <p data-i18n="blog.subtitle">Tutorials, Einblicke und Erfahrungen aus der Praxis.</p>
         </div>
         <ul class="blog-list">
           <li class="blog-list-item">
@@ -167,7 +177,7 @@
               target="_blank"
               rel="noopener"
             >
-              <time datetime="2023-11-17">17. Nov 2023</time>
+              <time datetime="2023-11-17" data-i18n="blog.post1_date">17. Nov 2023</time>
               <span class="blog-list-title">Role Based Access Control with App Roles in Azure Static Web Apps</span>
             </a>
           </li>
@@ -177,7 +187,7 @@
               target="_blank"
               rel="noopener"
             >
-              <time datetime="2023-06-29">29. Jun 2023</time>
+              <time datetime="2023-06-29" data-i18n="blog.post2_date">29. Jun 2023</time>
               <span class="blog-list-title">Running Python Wheel Tasks in Custom Docker Containers in Databricks</span>
             </a>
           </li>
@@ -187,7 +197,7 @@
               target="_blank"
               rel="noopener"
             >
-              <time datetime="2021-02-23">23. Feb 2021</time>
+              <time datetime="2021-02-23" data-i18n="blog.post3_date">23. Feb 2021</time>
               <span class="blog-list-title">Train your own object detector with Faster-RCNN &amp; PyTorch</span>
             </a>
           </li>
@@ -211,7 +221,7 @@
           <img src="images/logo.png" alt="Logo" width="28" height="28" />
           <span>Johannes Schmidt</span>
         </div>
-        <p class="footer-text">&copy; 2026 Johannes Schmidt. Alle Rechte vorbehalten.</p>
+        <p class="footer-text" data-i18n="footer.rights">&copy; 2026 Johannes Schmidt. Alle Rechte vorbehalten.</p>
         <div class="footer-links">
           <a href="https://www.linkedin.com/in/johannes-schmidt-8789461bb" target="_blank" rel="noopener"
             >LinkedIn<svg
@@ -249,12 +259,13 @@
                 d="M5 2H2.5A1.5 1.5 0 001 3.5v6A1.5 1.5 0 002.5 11h6A1.5 1.5 0 0010 9.5V7M7 1h4m0 0v4m0-4L5.5 6.5"
               /></svg
           ></a>
-          <a href="index.html#kontakt">Kontakt</a>
-          <a href="impressum.html">Impressum</a>
+          <a href="index.html#kontakt" data-i18n="footer.contact">Kontakt</a>
+          <a href="impressum.html" data-i18n="footer.impressum">Impressum</a>
         </div>
       </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
   </body>
 </html>

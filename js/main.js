@@ -13,7 +13,9 @@ const nav = document.getElementById('nav');
 navToggle.addEventListener('click', () => {
   nav.classList.toggle('active');
   const isOpen = nav.classList.contains('active');
-  navToggle.setAttribute('aria-label', isOpen ? 'Menü schließen' : 'Menü öffnen');
+  const menuOpenLabel = typeof i18next !== 'undefined' ? i18next.t('nav.menu_open') : 'Menü öffnen';
+  const menuCloseLabel = typeof i18next !== 'undefined' ? i18next.t('nav.menu_close') : 'Menü schließen';
+  navToggle.setAttribute('aria-label', isOpen ? menuCloseLabel : menuOpenLabel);
   navToggle.setAttribute('aria-expanded', isOpen);
 });
 

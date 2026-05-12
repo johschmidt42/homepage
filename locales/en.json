@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "title": "Freelance Backend & Data Engineer – Johannes Schmidt",
+    "description": "Freelance Software Engineer from Würzburg — Backend, Data & AI. Python, cloud architecture, and AI integration for scalable systems."
+  },
+  "blog_meta": {
+    "title": "Blog – Johannes Schmidt | Backend & Data Engineer",
+    "description": "Tutorials, insights, and real-world experience."
+  },
+  "nav": {
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "blog": "Blog",
+    "cv": "Resume",
+    "contact": "Contact",
+    "menu_open": "Open menu",
+    "menu_close": "Close menu"
+  },
+  "hero": {
+    "eyebrow": "Backend & Data Engineer",
+    "title_pre": "Less chaos, more ",
+    "title_highlight": "structure.",
+    "subtitle": "I build scalable backend systems, data-driven pipelines, and cloud solutions — from idea to production.",
+    "cta_primary": "Get in touch",
+    "cta_secondary": "View projects",
+    "badge_azure": "Microsoft Azure Certified",
+    "badge_architect": "Architect & Developer",
+    "badge_msc": "Master of Science",
+    "img_alt": "Johannes Schmidt, Backend & Data Engineer"
+  },
+  "stats": {
+    "years": "Years of experience",
+    "certs": "Certifications",
+    "projects": "Projects delivered",
+    "tech": "Technologies"
+  },
+  "services": {
+    "label": "Services",
+    "title": "What I can do for you",
+    "subtitle": "From architecture to deployment — clean, scalable, production-ready.",
+    "api_title": "System & API Design",
+    "api_desc": "Thoughtful API and database design as the foundation for scalable systems. REST APIs, event-driven architectures, and clean system boundaries.",
+    "backend_title": "Backend Development",
+    "backend_desc": "Scalable backend systems with Python and FastAPI. Clean code and robust test coverage — production-ready from the start.",
+    "data_title": "Data & Pipelines",
+    "data_desc": "Data architecture and ETL pipelines. From raw data ingestion to a clean, actionable data foundation.",
+    "ai_title": "AI Engineering",
+    "ai_desc": "Integrating AI models and LLMs into production systems — with evaluation, observability, and scaling, so AI doesn't stop at the prototype stage.",
+    "devops_title": "DevOps & CI/CD",
+    "devops_desc": "CI/CD pipelines, containerised deployments, and end-to-end observability — so software ships fast, safely, and reliably.",
+    "cloud_title": "Cloud Infrastructure",
+    "cloud_desc": "Cloud architectures on Azure, GCP, and AWS — provisioned with Infrastructure as Code (IaC)."
+  },
+  "portfolio": {
+    "label": "Portfolio",
+    "title_pre": "Selected ",
+    "title_highlight": "Projects",
+    "subtitle": "From backend architecture to AI integration — a selection of my freelance projects.",
+    "item1_title": "Video Content Analysis Platform",
+    "item1_desc": "AI-powered platform for automatic metadata extraction from video content — plotlines, characters, scenes. Microservices architecture on GCP with secure authentication, observability via OpenTelemetry, and LLM integration.",
+    "item2_title": "Story Development Workflow Platform",
+    "item2_desc": "Modular AI workflow system for creative production teams on Azure. Deep-research workflows and GenAI-powered image generation with LangChain, monitoring with LangSmith.",
+    "item3_title": "Multi-Subscription Data Exchange Store",
+    "item3_desc": "Data platform on Azure. ETL pipelines with Databricks and Azure Synapse, high security requirements following OWASP standards.",
+    "item4_title": "Agentic RAG System",
+    "item4_desc": "Retrieval-Augmented Generation system with autonomous agents connected to structured and unstructured data sources. OpenAI integration, vector database with QDrant, full observability setup with OpenTelemetry and Langfuse."
+  },
+  "about": {
+    "label": "About me",
+    "title_pre": "From Science to",
+    "title_highlight": "Software Engineer",
+    "chapter1": "Beginning",
+    "p1": "During my Bioinformatics studies, I discovered programming as a tool — to understand data, automate processes, and answer scientific questions.",
+    "chapter2": "Growth",
+    "p2": "Joined a startup as a working student, hired full-time shortly after. Three years of client projects: real systems, real problems, real deadlines. That's where I learned the craft — backend development, data pipelines, various cloud environments. From idea to go-live.",
+    "chapter3": "Today",
+    "p3": "Freelance since January 2024, with over 6 years of experience across the full stack: Software, Data, AI, and Cloud. My studies shaped analytical thinking; practice sharpened my eye for systems that need to deliver.",
+    "p4": "I work in a structured way, communicate directly, and deliver in short iterations — so projects don't just start, they get done.",
+    "cta_pre": "Curious?",
+    "cta_link": "Let's talk.",
+    "highlight1_title": "Adaptable",
+    "highlight1_desc": "Quick onboarding, lasting understanding",
+    "highlight2_title": "Results-focused",
+    "highlight2_desc": "Pragmatism, not perfectionism",
+    "highlight3_title": "Remote & on-site",
+    "highlight3_desc": "Remote-first, on-site for workshops",
+    "highlight4_title": "Independent & efficient",
+    "highlight4_desc": "Direct communication, quality focus"
+  },
+  "certs": {
+    "label": "Certifications",
+    "title_pre": "Certified ",
+    "title_highlight": "Expertise"
+  },
+  "blog": {
+    "label": "Blog",
+    "title_pre": "Sharing ",
+    "title_highlight": "knowledge",
+    "subtitle": "Tutorials, insights, and real-world experience.",
+    "read": "Read",
+    "see_all": "View all posts",
+    "post1_date": "Nov 17, 2023",
+    "post2_date": "Jun 29, 2023",
+    "post3_date": "Feb 23, 2021"
+  },
+  "contact": {
+    "label": "Contact",
+    "title_pre": "Discuss a ",
+    "title_highlight": "project?",
+    "subtitle": "I'd love to hear from you — whether it's a project inquiry or just a conversation.",
+    "email_label": "Email",
+    "phone_label": "Phone",
+    "location_label": "Location",
+    "location_value": "Würzburg, Bavaria",
+    "form_name_label": "Name",
+    "form_name_placeholder": "Your name",
+    "form_email_label": "Email",
+    "form_email_placeholder": "your@email.com",
+    "form_subject_label": "Subject",
+    "form_subject_default": "Please select...",
+    "form_subject_project": "Project inquiry",
+    "form_subject_consulting": "Consulting",
+    "form_subject_other": "Other",
+    "form_message_label": "Message",
+    "form_message_placeholder": "Briefly describe your inquiry...",
+    "form_submit": "Send message"
+  },
+  "footer": {
+    "rights": "© 2026 Johannes Schmidt. All rights reserved.",
+    "contact": "Contact",
+    "impressum": "Imprint"
+  }
+}

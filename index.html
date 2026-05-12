@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Backend & Data Experte freiberuflich – Johannes Schmidt</title>
+    <title data-i18n="meta.title">Backend & Data Experte freiberuflich – Johannes Schmidt</title>
     <meta
       name="description"
+      data-i18n="[content]meta.description"
       content="Freiberuflicher Software Engineer aus Würzburg — Backend, Data & AI. Python, Cloud-Architektur und KI-Integration für skalierbare Systeme."
     />
     <link rel="canonical" href="https://johannes-schmidt.dev/" />
@@ -45,6 +46,11 @@
     />
     <link rel="preload" as="image" href="images/self/headshot-1.jpg" fetchpriority="high" />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- i18next -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@23/dist/umd/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2/i18nextHttpBackend.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@7/i18nextBrowserLanguageDetector.min.js"></script>
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -147,12 +153,12 @@
           <span>Johannes Schmidt</span>
         </a>
         <nav class="nav-links" id="nav">
-          <a href="#leistungen">Leistungen</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#ueber-mich">Über mich</a>
-          <a href="#blog">Blog</a>
+          <a href="#leistungen" data-i18n="nav.services">Leistungen</a>
+          <a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+          <a href="#ueber-mich" data-i18n="nav.about">Über mich</a>
+          <a href="#blog" data-i18n="nav.blog">Blog</a>
           <a href="cv/cv.pdf" target="_blank" rel="noopener"
-            >Lebenslauf<svg
+            ><span data-i18n="nav.cv">Lebenslauf</span><svg
               class="nav-ext-icon"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 12 12"
@@ -169,9 +175,14 @@
                 d="M5 2H2.5A1.5 1.5 0 001 3.5v6A1.5 1.5 0 002.5 11h6A1.5 1.5 0 0010 9.5V7M7 1h4m0 0v4m0-4L5.5 6.5"
               /></svg
           ></a>
-          <a href="#kontakt" class="btn btn-primary btn-sm">Kontakt</a>
+          <a href="#kontakt" class="btn btn-primary btn-sm" data-i18n="nav.contact">Kontakt</a>
+          <div class="lang-switcher">
+            <button class="lang-switch lang-switch--active" data-lang="de">DE</button>
+            <span aria-hidden="true">|</span>
+            <button class="lang-switch" data-lang="en">EN</button>
+          </div>
         </nav>
-        <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen">
+        <button class="nav-toggle" id="nav-toggle" data-i18n="[aria-label]nav.menu_open" aria-label="Menü öffnen">
           <span></span>
           <span></span>
           <span></span>
@@ -192,15 +203,15 @@
       </div>
       <div class="container">
         <div class="hero-content">
-          <p class="hero-eyebrow">Backend & Data Experte</p>
-          <h1>Weniger Chaos, mehr <span class="highlight">Struktur.</span></h1>
-          <p class="hero-subtitle">
+          <p class="hero-eyebrow" data-i18n="hero.eyebrow">Backend & Data Experte</p>
+          <h1><span data-i18n="hero.title_pre">Weniger Chaos, mehr </span><span class="highlight" data-i18n="hero.title_highlight">Struktur.</span></h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
             Ich entwickle skalierbare Backend-Systeme, datengetriebene Pipelines und Cloud-Lösungen — von der Idee bis
             in die Produktion.
           </p>
           <div class="hero-ctas">
             <a href="#kontakt" class="btn btn-primary btn-arrow">
-              Kontakt aufnehmen
+              <span data-i18n="hero.cta_primary">Kontakt aufnehmen</span>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path
                   fill-rule="evenodd"
@@ -209,7 +220,7 @@
                 />
               </svg>
             </a>
-            <a href="#portfolio" class="btn btn-outline">Projekte ansehen</a>
+            <a href="#portfolio" class="btn btn-outline" data-i18n="hero.cta_secondary">Projekte ansehen</a>
           </div>
           <div class="hero-badges">
             <span class="hero-badge">
@@ -220,7 +231,7 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              Microsoft Azure Zertifiziert
+              <span data-i18n="hero.badge_azure">Microsoft Azure Zertifiziert</span>
             </span>
             <span class="hero-badge">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -234,7 +245,7 @@
                   d="M3.265 15.602l7.668 4.129a2.25 2.25 0 002.134 0l7.668-4.13 1.37.739a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.71 0l-9.75-5.25a.75.75 0 010-1.32l1.37-.738z"
                 />
               </svg>
-              Architekt & Entwickler
+              <span data-i18n="hero.badge_architect">Architekt & Entwickler</span>
             </span>
             <span class="hero-badge">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -255,7 +266,7 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              Master of Science
+              <span data-i18n="hero.badge_msc">Master of Science</span>
             </span>
           </div>
         </div>
@@ -264,6 +275,7 @@
           <div class="hero-decoration hero-decoration-2"></div>
           <img
             src="images/self/headshot-1.jpg"
+            data-i18n="[alt]hero.img_alt"
             alt="Johannes Schmidt, Backend & Data Experte"
             width="380"
             height="380"
@@ -285,19 +297,19 @@
           <div class="stats-grid">
             <div class="stat-item">
               <h3 data-count="6">0</h3>
-              <p>Jahre Erfahrung</p>
+              <p data-i18n="stats.years">Jahre Erfahrung</p>
             </div>
             <div class="stat-item">
               <h3 data-count="6">0</h3>
-              <p>Zertifizierungen</p>
+              <p data-i18n="stats.certs">Zertifizierungen</p>
             </div>
             <div class="stat-item">
               <h3 data-count="4">0</h3>
-              <p>Projekte umgesetzt</p>
+              <p data-i18n="stats.projects">Projekte umgesetzt</p>
             </div>
             <div class="stat-item">
               <h3 data-count="20">0</h3>
-              <p>Technologien</p>
+              <p data-i18n="stats.tech">Technologien</p>
             </div>
           </div>
         </div>
@@ -317,9 +329,9 @@
       </div>
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Leistungen</span>
-          <h2>Was ich für Sie tun kann</h2>
-          <p>Von der Architektur bis zum Deployment — sauber, skalierbar, produktionsreif.</p>
+          <span class="section-label" data-i18n="services.label">Leistungen</span>
+          <h2 data-i18n="services.title">Was ich für Sie tun kann</h2>
+          <p data-i18n="services.subtitle">Von der Architektur bis zum Deployment — sauber, skalierbar, produktionsreif.</p>
         </div>
         <div class="services-grid">
           <div class="service-card">
@@ -337,9 +349,9 @@
                   />
                 </svg>
               </div>
-              <h3>System- & API-Design</h3>
+              <h3 data-i18n="services.api_title">System- & API-Design</h3>
             </div>
-            <p>
+            <p data-i18n="services.api_desc">
               Durchdachtes API- und Datenbankdesign als Fundament skalierbarer Systeme. REST-APIs, event-driven
               Architekturen und saubere Systemgrenzen.
             </p>
@@ -362,9 +374,9 @@
                   />
                 </svg>
               </div>
-              <h3>Backend-Entwicklung</h3>
+              <h3 data-i18n="services.backend_title">Backend-Entwicklung</h3>
             </div>
-            <p>
+            <p data-i18n="services.backend_desc">
               Skalierbare Backend-Systeme mit Python und FastAPI. Sauberer Code und robuste Testabdeckung —
               produktionsreif von Anfang an.
             </p>
@@ -392,9 +404,9 @@
                   />
                 </svg>
               </div>
-              <h3>Daten & Pipelines</h3>
+              <h3 data-i18n="services.data_title">Daten & Pipelines</h3>
             </div>
-            <p>
+            <p data-i18n="services.data_desc">
               Datenarchitektur und ETL-Pipelines. Von der Rohdaten-Ingestion bis zur sauberen, verwertbaren Datenbasis.
             </p>
             <div class="service-tags">
@@ -416,9 +428,9 @@
                   />
                 </svg>
               </div>
-              <h3>AI Engineering</h3>
+              <h3 data-i18n="services.ai_title">AI Engineering</h3>
             </div>
-            <p>
+            <p data-i18n="services.ai_desc">
               KI-Modelle und LLMs in produktive Systeme integrieren — mit Evaluierung, Observability und Skalierung,
               damit KI nicht beim Prototyp bleibt.
             </p>
@@ -449,9 +461,9 @@
                   />
                 </svg>
               </div>
-              <h3>DevOps & CI/CD</h3>
+              <h3 data-i18n="services.devops_title">DevOps & CI/CD</h3>
             </div>
-            <p>
+            <p data-i18n="services.devops_desc">
               CI/CD-Pipelines, containerisierte Deployments und end-to-end Observability — damit Software schnell,
               sicher und nachvollziehbar in Produktion geht.
             </p>
@@ -473,9 +485,9 @@
                   />
                 </svg>
               </div>
-              <h3>Cloud-Infrastruktur</h3>
+              <h3 data-i18n="services.cloud_title">Cloud-Infrastruktur</h3>
             </div>
-            <p>Cloud-Architekturen auf Azure, GCP und AWS — provisioniert mit Infrastructure as Code (IaC).</p>
+            <p data-i18n="services.cloud_desc">Cloud-Architekturen auf Azure, GCP und AWS — provisioniert mit Infrastructure as Code (IaC).</p>
             <div class="service-tags">
               <span class="service-tag">Azure</span>
               <span class="service-tag">GCP</span>
@@ -500,15 +512,15 @@
       </div>
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Portfolio</span>
-          <h2>Ausgewählte <span class="highlight">Projekte</span></h2>
-          <p>Von der Backend-Architektur bis zur KI-Integration — ein Auszug meiner Projekte als Freelancer.</p>
+          <span class="section-label" data-i18n="portfolio.label">Portfolio</span>
+          <h2><span data-i18n="portfolio.title_pre">Ausgewählte </span><span class="highlight" data-i18n="portfolio.title_highlight">Projekte</span></h2>
+          <p data-i18n="portfolio.subtitle">Von der Backend-Architektur bis zur KI-Integration — ein Auszug meiner Projekte als Freelancer.</p>
         </div>
         <ol class="portfolio-list">
           <li class="portfolio-item portfolio-item--integration">
             <div class="portfolio-item-body">
-              <h3>Video-Content-Analyse-Plattform</h3>
-              <p class="portfolio-item-desc">
+              <h3 data-i18n="portfolio.item1_title">Video-Content-Analyse-Plattform</h3>
+              <p class="portfolio-item-desc" data-i18n="portfolio.item1_desc">
                 KI-gestützte Plattform zur automatischen Extraktion von Metadaten aus Videoinhalten — Plotlines,
                 Charaktere, Szenen. Microservices-Architektur auf GCP mit sicherer Authentifizierung, Observability via
                 OpenTelemetry und LLM-Integration.
@@ -528,8 +540,8 @@
           </li>
           <li class="portfolio-item portfolio-item--integration">
             <div class="portfolio-item-body">
-              <h3>Story-Development-Workflow-Plattform</h3>
-              <p class="portfolio-item-desc">
+              <h3 data-i18n="portfolio.item2_title">Story-Development-Workflow-Plattform</h3>
+              <p class="portfolio-item-desc" data-i18n="portfolio.item2_desc">
                 Modulares KI-Workflow-System für kreative Produktionsteams auf Azure. Deep-Research-Workflows und
                 GenAI-gestützte Bildgenerierung mit LangChain, Monitoring mit LangSmith.
               </p>
@@ -550,8 +562,8 @@
           </li>
           <li class="portfolio-item portfolio-item--integration">
             <div class="portfolio-item-body">
-              <h3>Multi-Subscription Data Exchange Store</h3>
-              <p class="portfolio-item-desc">
+              <h3 data-i18n="portfolio.item3_title">Multi-Subscription Data Exchange Store</h3>
+              <p class="portfolio-item-desc" data-i18n="portfolio.item3_desc">
                 Daten-Plattform auf Azure. ETL-Pipelines mit Databricks und Azure Synapse, hohe Sicherheitsanforderungen
                 nach OWASP-Standard.
               </p>
@@ -573,8 +585,8 @@
           </li>
           <li class="portfolio-item portfolio-item--integration">
             <div class="portfolio-item-body">
-              <h3>Agentic-RAG-System</h3>
-              <p class="portfolio-item-desc">
+              <h3 data-i18n="portfolio.item4_title">Agentic-RAG-System</h3>
+              <p class="portfolio-item-desc" data-i18n="portfolio.item4_desc">
                 Retrieval-Augmented-Generation-System mit autonomen Agenten, die an strukturierte und unstrukturierte
                 Datenquellen angebunden sind. OpenAI-Integration, Vektordatenbank mit QDrant, vollständiges
                 Observability-Setup mit OpenTelemetry und Langfuse.
@@ -614,29 +626,29 @@
           <div class="about-image-decoration"></div>
         </div>
         <div class="about-content">
-          <span class="section-label">Über mich</span>
-          <h2>Von der Wissenschaft zum<br /><span class="highlight">Software Engineer</span></h2>
-          <span class="about-chapter">Einstieg</span>
-          <p>
+          <span class="section-label" data-i18n="about.label">Über mich</span>
+          <h2><span data-i18n="about.title_pre">Von der Wissenschaft zum</span><br /><span class="highlight" data-i18n="about.title_highlight">Software Engineer</span></h2>
+          <span class="about-chapter" data-i18n="about.chapter1">Einstieg</span>
+          <p data-i18n="about.p1">
             Im Bioinformatik-Studium entdeckte ich Programmieren als Werkzeug — um Daten zu verstehen, Prozesse zu
             automatisieren und wissenschaftliche Fragen zu beantworten.
           </p>
-          <span class="about-chapter">Wachstum</span>
-          <p>
+          <span class="about-chapter" data-i18n="about.chapter2">Wachstum</span>
+          <p data-i18n="about.p2">
             Als Werkstudent bei einem Startup eingestiegen, kurze Zeit später fest übernommen. Drei Jahre
             Kundenprojekte: echte Systeme, echte Probleme, echte Deadlines. Hier habe ich das Handwerk gelernt —
             Backend-Entwicklung, Datenpipelines, verschiedene Cloud-Umgebungen. Von der Idee bis zum Go-Live.
           </p>
-          <span class="about-chapter">Heute</span>
-          <p>
+          <span class="about-chapter" data-i18n="about.chapter3">Heute</span>
+          <p data-i18n="about.p3">
             Seit Januar 2024 freiberuflich, mit über 6 Jahren Erfahrung über den gesamten Stack: Software, Data, AI und
             Cloud. Das Studium hat analytisches Denken geprägt, die Praxis den Blick für Systeme, die liefern müssen.
           </p>
-          <p>
+          <p data-i18n="about.p4">
             Ich arbeite strukturiert, kommuniziere direkt und liefere in kurzen Iterationen — damit Projekte nicht nur
             starten, sondern ankommen.
           </p>
-          <p class="about-cta">Neugierig geworden? <a href="#kontakt">Lassen Sie uns sprechen.</a></p>
+          <p class="about-cta"><span data-i18n="about.cta_pre">Neugierig geworden?</span> <a href="#kontakt" data-i18n="about.cta_link">Lassen Sie uns sprechen.</a></p>
           <div class="about-highlights">
             <div class="about-highlight">
               <div class="about-highlight-icon">
@@ -649,8 +661,8 @@
                 </svg>
               </div>
               <div>
-                <h4>Anpassungsfähig</h4>
-                <p>Schnelle Einarbeitung, nachhaltiges Verständnis</p>
+                <h4 data-i18n="about.highlight1_title">Anpassungsfähig</h4>
+                <p data-i18n="about.highlight1_desc">Schnelle Einarbeitung, nachhaltiges Verständnis</p>
               </div>
             </div>
             <div class="about-highlight">
@@ -662,8 +674,8 @@
                 </svg>
               </div>
               <div>
-                <h4>Fokus auf Ergebnisse</h4>
-                <p>Pragmatismus, kein Perfektionismus</p>
+                <h4 data-i18n="about.highlight2_title">Fokus auf Ergebnisse</h4>
+                <p data-i18n="about.highlight2_desc">Pragmatismus, kein Perfektionismus</p>
               </div>
             </div>
             <div class="about-highlight">
@@ -677,8 +689,8 @@
                 </svg>
               </div>
               <div>
-                <h4>Remote & vor Ort</h4>
-                <p>Remote-first, vor Ort für Workshops</p>
+                <h4 data-i18n="about.highlight3_title">Remote & vor Ort</h4>
+                <p data-i18n="about.highlight3_desc">Remote-first, vor Ort für Workshops</p>
               </div>
             </div>
             <div class="about-highlight">
@@ -690,8 +702,8 @@
                 </svg>
               </div>
               <div>
-                <h4>Selbständig & effizient</h4>
-                <p>Direkte Kommunikation, Qualitätsfokus</p>
+                <h4 data-i18n="about.highlight4_title">Selbständig & effizient</h4>
+                <p data-i18n="about.highlight4_desc">Direkte Kommunikation, Qualitätsfokus</p>
               </div>
             </div>
           </div>
@@ -712,8 +724,8 @@
       </div>
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Zertifizierungen</span>
-          <h2>Zertifizierte <span class="highlight">Expertise</span></h2>
+          <span class="section-label" data-i18n="certs.label">Zertifizierungen</span>
+          <h2><span data-i18n="certs.title_pre">Zertifizierte </span><span class="highlight" data-i18n="certs.title_highlight">Expertise</span></h2>
         </div>
         <div class="certs-grid">
           <div class="cert-card">
@@ -843,9 +855,9 @@
       </div>
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Blog</span>
-          <h2>Wissen <span class="highlight">teilen</span></h2>
-          <p>Tutorials, Einblicke und Erfahrungen aus der Praxis.</p>
+          <span class="section-label" data-i18n="blog.label">Blog</span>
+          <h2><span data-i18n="blog.title_pre">Wissen </span><span class="highlight" data-i18n="blog.title_highlight">teilen</span></h2>
+          <p data-i18n="blog.subtitle">Tutorials, Einblicke und Erfahrungen aus der Praxis.</p>
         </div>
         <div class="blog-grid">
           <article class="blog-card">
@@ -862,13 +874,13 @@
                 ID App Roles.
               </p>
               <div class="blog-card-footer">
-                <span>17. Nov 2023</span>
+                <span data-i18n="blog.post1_date">17. Nov 2023</span>
                 <a
                   href="https://johschmidt42.medium.com/role-based-access-control-with-app-roles-in-azure-static-web-apps-f6525d1b7d92"
                   target="_blank"
                   rel="noopener"
                 >
-                  Lesen
+                  <span data-i18n="blog.read">Lesen</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
@@ -900,13 +912,13 @@
                 on Databricks — with Poetry and Typer CLI.
               </p>
               <div class="blog-card-footer">
-                <span>29. Jun 2023</span>
+                <span data-i18n="blog.post2_date">29. Jun 2023</span>
                 <a
                   href="https://medium.com/towards-data-science/running-python-wheel-tasks-in-custom-docker-containers-in-databricks-de3ff20f5c79"
                   target="_blank"
                   rel="noopener"
                 >
-                  Lesen
+                  <span data-i18n="blog.read">Lesen</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
@@ -938,13 +950,13 @@
                 training a Faster-RCNN model via transfer learning.
               </p>
               <div class="blog-card-footer">
-                <span>23. Feb 2021</span>
+                <span data-i18n="blog.post3_date">23. Feb 2021</span>
                 <a
                   href="https://johschmidt42.medium.com/train-your-own-object-detector-with-faster-rcnn-pytorch-8d3c759cfc70"
                   target="_blank"
                   rel="noopener"
                 >
-                  Lesen
+                  <span data-i18n="blog.read">Lesen</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
@@ -964,7 +976,7 @@
           </article>
         </div>
         <div class="blog-section-cta">
-          <a href="blog.html" class="btn btn-outline">Alle Beiträge ansehen</a>
+          <a href="blog.html" class="btn btn-outline" data-i18n="blog.see_all">Alle Beiträge ansehen</a>
         </div>
       </div>
     </section>
@@ -982,9 +994,9 @@
       </div>
       <div class="container">
         <div class="contact-info">
-          <span class="section-label">Kontakt</span>
-          <h2>Projekt <span class="highlight">besprechen?</span></h2>
-          <p>Ich freue mich über Ihre Nachricht, ob Projektanfrage oder einfach zum Austausch.</p>
+          <span class="section-label" data-i18n="contact.label">Kontakt</span>
+          <h2><span data-i18n="contact.title_pre">Projekt </span><span class="highlight" data-i18n="contact.title_highlight">besprechen?</span></h2>
+          <p data-i18n="contact.subtitle">Ich freue mich über Ihre Nachricht, ob Projektanfrage oder einfach zum Austausch.</p>
           <div class="contact-methods">
             <div class="contact-method">
               <div class="contact-method-icon">
@@ -994,7 +1006,7 @@
                 </svg>
               </div>
               <div class="contact-method-text">
-                <h4>E-Mail</h4>
+                <h4 data-i18n="contact.email_label">E-Mail</h4>
                 <p><a href="mailto:johannes.schmidt.vik@gmail.com">johannes.schmidt.vik@gmail.com</a></p>
               </div>
             </div>
@@ -1009,7 +1021,7 @@
                 </svg>
               </div>
               <div class="contact-method-text">
-                <h4>Telefon</h4>
+                <h4 data-i18n="contact.phone_label">Telefon</h4>
                 <p><a href="tel:+4917645733294">+49 (0) 176 4573 3294</a></p>
               </div>
             </div>
@@ -1024,8 +1036,8 @@
                 </svg>
               </div>
               <div class="contact-method-text">
-                <h4>Standort</h4>
-                <p>Würzburg, Bayern</p>
+                <h4 data-i18n="contact.location_label">Standort</h4>
+                <p data-i18n="contact.location_value">Würzburg, Bayern</p>
               </div>
             </div>
           </div>
@@ -1033,34 +1045,35 @@
         <form class="contact-form" id="contact-form">
           <div class="form-row">
             <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Ihr Name" required />
+              <label for="name" data-i18n="contact.form_name_label">Name</label>
+              <input type="text" id="name" name="name" data-i18n="[placeholder]contact.form_name_placeholder" placeholder="Ihr Name" required />
             </div>
             <div class="form-group">
-              <label for="email">E-Mail</label>
-              <input type="email" id="email" name="email" placeholder="ihre@email.de" required />
+              <label for="email" data-i18n="contact.form_email_label">E-Mail</label>
+              <input type="email" id="email" name="email" data-i18n="[placeholder]contact.form_email_placeholder" placeholder="ihre@email.de" required />
             </div>
           </div>
           <div class="form-group">
-            <label for="subject">Betreff</label>
+            <label for="subject" data-i18n="contact.form_subject_label">Betreff</label>
             <select id="subject" name="subject">
-              <option value="">Bitte wählen...</option>
-              <option value="projekt">Projektanfrage</option>
-              <option value="beratung">Beratung</option>
-              <option value="sonstiges">Sonstiges</option>
+              <option value="" data-i18n="contact.form_subject_default">Bitte wählen...</option>
+              <option value="projekt" data-i18n="contact.form_subject_project">Projektanfrage</option>
+              <option value="beratung" data-i18n="contact.form_subject_consulting">Beratung</option>
+              <option value="sonstiges" data-i18n="contact.form_subject_other">Sonstiges</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="message">Nachricht</label>
+            <label for="message" data-i18n="contact.form_message_label">Nachricht</label>
             <textarea
               id="message"
               name="message"
+              data-i18n="[placeholder]contact.form_message_placeholder"
               placeholder="Beschreiben Sie kurz Ihr Anliegen..."
               required
             ></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-arrow">
-            Nachricht senden
+            <span data-i18n="contact.form_submit">Nachricht senden</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
               <path
                 fill-rule="evenodd"
@@ -1089,7 +1102,7 @@
           <img src="images/logo.png" alt="Logo" width="28" height="28" />
           <span>Johannes Schmidt</span>
         </div>
-        <p class="footer-text">&copy; 2026 Johannes Schmidt. Alle Rechte vorbehalten.</p>
+        <p class="footer-text" data-i18n="footer.rights">&copy; 2026 Johannes Schmidt. Alle Rechte vorbehalten.</p>
         <div class="footer-links">
           <a href="https://www.linkedin.com/in/johannes-schmidt-8789461bb" target="_blank" rel="noopener"
             >LinkedIn<svg
@@ -1127,12 +1140,13 @@
                 d="M5 2H2.5A1.5 1.5 0 001 3.5v6A1.5 1.5 0 002.5 11h6A1.5 1.5 0 0010 9.5V7M7 1h4m0 0v4m0-4L5.5 6.5"
               /></svg
           ></a>
-          <a href="#kontakt">Kontakt</a>
-          <a href="impressum.html">Impressum</a>
+          <a href="#kontakt" data-i18n="footer.contact">Kontakt</a>
+          <a href="impressum.html" data-i18n="footer.impressum">Impressum</a>
         </div>
       </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
   </body>
 </html>
