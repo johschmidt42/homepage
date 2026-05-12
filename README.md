@@ -11,11 +11,14 @@ Personal freelancer portfolio deployed to GitHub Pages: https://johannes-schmidt
 
 ```
 index.html          — Landing page (Hero, Portfolio, About, Contact)
-impressum.html      — Legal notice
+impressum.html      — Legal notice (German only)
 blog.html           — Blog overview
 cv/                 — CV page
 css/styles.css      — All styles
 js/main.js          — All scripts
+js/i18n.js          — Language switching logic (i18next init + applyTranslations)
+locales/de.json     — German strings
+locales/en.json     — English strings
 images/             — Images and logo
 ```
 
@@ -33,7 +36,10 @@ images/             — Images and logo
 
 **Tokens** — CSS custom properties in `:root` (`css/styles.css`)
 
+## i18n
+
+German (default) + English via a DE | EN nav toggle. Uses [i18next](https://www.i18next.com/) via CDN. Strings live in `locales/de.json` and `locales/en.json`. Elements are marked with `data-i18n="key"` attributes; `js/i18n.js` swaps them on load. `impressum.html` is German-only.
+
 ## Language
 
-- Content: German
 - Code and comments: English
