@@ -491,6 +491,12 @@ a.btn-primary:hover {
 
 h1 .highlight {
   color: inherit;
+  background-size: 0% 10px;
+  background-position: 0 100%;
+}
+
+h1 .highlight.is-visible {
+  background-size: 100% 10px;
 }
 
 h2 .highlight {
