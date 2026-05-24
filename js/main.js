@@ -14,7 +14,8 @@ navToggle.addEventListener('click', () => {
   nav.classList.toggle('active');
   const isOpen = nav.classList.contains('active');
   const menuOpenLabel = typeof i18next !== 'undefined' ? i18next.t('nav.menu_open') : 'Menü öffnen';
-  const menuCloseLabel = typeof i18next !== 'undefined' ? i18next.t('nav.menu_close') : 'Menü schließen';
+  const menuCloseLabel =
+    typeof i18next !== 'undefined' ? i18next.t('nav.menu_close') : 'Menü schließen';
   navToggle.setAttribute('aria-label', isOpen ? menuCloseLabel : menuOpenLabel);
   navToggle.setAttribute('aria-expanded', isOpen);
 });
@@ -100,7 +101,7 @@ if (contactForm) {
     const message = contactForm.querySelector('#message').value;
 
     const body = `Name: ${name}\nE-Mail: ${email}\n\n${message}`;
-    const mailto = `mailto:johannes.schmidt.vik@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailto = `mailto:mail@johannes-schmidt.dev?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     window.location.href = mailto;
     contactForm.reset();
